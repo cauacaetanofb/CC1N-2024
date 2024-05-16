@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <style>
+        *{
+            margin: 0;
+        }
+
+        .formulario{
+            width: 400px;
+            padding: 30px;
+            border: 1px solid #ccc;
+
+        }
+
+        .formulario span{
+            width: 100%;
+            font-size: 1.5em;
+        }
+
+        .field{
+            width: 100%;
+            margin: 15px 0;
+        }
+
+        .field span{
+            padding-left: 10px;
+            font-size: 1.1em;
+            display: block;
+
+        }
+
+        div{
+            display: flex;
+            justify-content: center;
+        }
+
+        section{
+
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+
+        .radio label{
+            width: auto;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <div><h1>Formulário de Contato</h1></div>
+
+    <section>
+        <form action="mailto:fabricio.ferreira@uvv.br" method="post">
+        <div class="field">
+            <span>Nome:</span>
+            <input type="text" id="nome"></div>
+        <br>
+        <br>
+        <span>Email:</span>
+        <input type="email">
+        <span>Data de nascimento:</span>
+        <input type="date">
+        <span>Visita ao Site:</span>
+        <input type="datetime-local">
+        <span>Senha:</span>
+        <input type="Password">
+        <span>Contato:</span>
+        <input type="radio" name="contato" id="sim" value="Sim"> Sim
+        <input type="radio" name="contato" id="nao" value="Não"> Não
+        <br>
+        <span>Assunto:</span>
+        <input type="checkbox" name="auto" id="auto"> Automóvel
+        <input type="checkbox" name="negocio" id="auto"> Negócios
+        <input type="checkbox" name="auto" id="financa"> Finanças
+        <input type="checkbox" name="auto" id="tecnologia"> Tecnologia
+        <input type="checkbox" name="auto" id="esporte"> Esporte
+        <span>local:</span>
+        <select name="local" id="local" size="1">
+            <option value="">Selecione</option>
+            <optgroup label="Grande Vitoria"></optgroup>
+            <option value="Vitoria">Vitoria</option>
+            <option value="Serra">Serra</option>
+            <option value="Cariacica">Cariacica</option>
+            <optgroup label="Região Serrana"></optgroup>
+            <option value="DM">Domingos Martins</option>
+            <option value="VH">Vitor Hugo</option>
+            <option value="PA">Pedra Azul</option>
+        </select>
+        <br>
+        <span>Comentários:</span>
+        <textarea name="comentario" id="comentario" cols="50" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </form>
+
+    </section>
+    
+</body>
+</html>
