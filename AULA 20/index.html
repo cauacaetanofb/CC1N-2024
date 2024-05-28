@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <section>
+            <h1>Login</h1>
+            <div>
+                <span>Email:</span>
+                <input id="usuario" type="text" size="40" />
+                <br><br>
+                <span>Senha:</span>
+                <input id="senha" type="password" size="40" />
+                <button onclick="validar()">Enviar</button>
+                <button onclick="cancel()">Cancelar</button>
+            </div>
+        </section>
+    </main>
+    <script>
+        const adm = "cauacaetanofb@gmail.com"
+        const psw = "uvv"
+
+        function cancel() {
+            window.open("index2.html","self");
+        }
+
+        /*function cancel() {
+            document.getElementById("usuario").value = "";
+            document.getElementById("senha").value = "";
+        }*/
+
+        function validar() {
+            let usuario = document.getElementById("usuario").value
+            let senha = document.getElementById("senha").value
+            if(usuario == adm && senha == psw) {
+                window.alert("Usuário logado com sucesso!")
+            }
+            else
+            {
+                window.alert("Usuário inválido")
+            }
+        }
+    </script>
+</body>
+</html>
