@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+  </head>
+  <body>
+    <script>
+      document.writeln("Olá mundo!");
+    </script>
+    <h1>JavaScript</h1>
+    <hr />
+
+    <div id="resposta"></div>
+
+    <br />
+
+    <div style="border: 3pxsolid">
+      <input id="usuario" type="text" size="60" />
+      <button onclick="validarUsusario()">Validar</button>
+    </div>
+
+    <script>
+      document.writeln("Vasco maior do mundo!!!!!!");
+      window.alert("Vegetti artilheiro");
+      document.getElementById("resposta").innerHTML = "Coutinho está de volta";
+
+      var botao_resposta = window.prompt("Digite seu nome:");
+      window.confirm("Se clicar em OK é gay:");
+      document.writeln(" <br> " + botao_resposta);
+    </script>
+
+    <script>
+      function validarUsusario() {
+        var nome_usuario = "";
+        nome_usuario = document.getElementById("usuario").value;
+        window.alert("foi digitado " + nome_usuario);
+        if (nome_usuario == "baiano") {
+          window.alert("ele é um Administrador");
+        } else {
+          window.alert("não é um administrador, é um petista");
+        }
+      }
+    </script>
+  </body>
+</html>
